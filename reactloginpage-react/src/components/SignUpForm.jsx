@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from "react-router-dom";
 
 const SignUpForm = () => {
   return (
@@ -25,7 +26,7 @@ const SignUpForm = () => {
         </div>
         <button className="btn">Sign Up</button>
         <div className="create-account">
-          <p>Already Have An Account? <a href="#" className="login-link">Sign In</a></p>
+          <p><NavLink to="/SingIn?" className={({ isActive }) => isActive ? "active" : ""}>Already Have An Account? Sing Up</NavLink></p>
         </div>
       </form>
     </div>

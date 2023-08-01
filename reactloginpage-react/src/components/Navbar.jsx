@@ -1,14 +1,16 @@
 import React from 'react';
+import { NavLink } from "react-router-dom";
+
 
 const Navbar = () => {
   return (
     <header className="header">
       <nav className="navbar">
-        <a href="#">Home</a>
-        <a href="#">Portfolio</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#">Help</a>
+        <NavLink to="/Home" className={({ isActive }) => isActive ? "active" : ""}>Home</NavLink>
+            <NavLink to="/Portfolio" className={({ isActive }) => isActive ? "active" : ""}>Portfolio</NavLink>
+            <NavLink to="/About" className={({ isActive }) => isActive ? "active" : ""}>About</NavLink>
+            <NavLink to="/Contact" className={({ isActive }) => isActive ? "active" : ""}>Contact</NavLink>
+            <NavLink to="/Help" className={({ isActive }) => isActive ? "active" : ""}>Help</NavLink>
       </nav>
       <form action="" className="search-bar">
         <input type="text" placeholder="Search..." />

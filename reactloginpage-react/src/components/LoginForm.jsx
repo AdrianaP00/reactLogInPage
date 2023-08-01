@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from "react-router-dom";
 
 const LoginForm = () => {
   return (
@@ -17,11 +18,11 @@ const LoginForm = () => {
         </div>
         <div className="remember-password">
           <label htmlFor=""><input type="checkbox" />Remember Me</label>
-          <a href="#">Forget Password</a>
+          <NavLink to="/forget-password" className={({ isActive }) => isActive ? "active" : ""}>Forget Password</NavLink>
         </div>
         <button className="btn">Login In</button>
         <div className="create-account">
-          <p>Create A New Account? <a href="#" className="register-link">Sign Up</a></p>
+          <p><NavLink to="/singup" className={({ isActive }) => isActive ? "active" : ""}>Create A New Account?</NavLink></p>
         </div>
       </form>
     </div>
