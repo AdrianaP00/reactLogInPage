@@ -22,7 +22,7 @@ const LoginForm = () => {
         </div>
         <button className="btn">Login In</button>
         <div className="create-account">
-          <p><NavLink to="/singup" className={({ isActive }) => isActive ? "active" : ""}>Create A New Account?</NavLink></p>
+          <p><NavLink to="/signup" className={({ isActive }) => isActive ? "active" : ""}>Create A New Account?</NavLink></p>
         </div>
       </form>
     </div>

@@ -26,7 +26,7 @@ const SignUpForm = () => {
         </div>
         <button className="btn">Sign Up</button>
         <div className="create-account">
-          <p><NavLink to="/SingIn?" className={({ isActive }) => isActive ? "active" : ""}>Already Have An Account? Sing Up</NavLink></p>
+          <p><NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>Already Have An Account? Sing Up</NavLink></p>
         </div>
       </form>
     </div>

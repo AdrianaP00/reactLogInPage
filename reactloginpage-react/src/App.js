@@ -2,16 +2,14 @@ import React from 'react';
 import { NavLink } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from './components/Navbar';
-import LoginForm from './components/LoginForm';
-import SignUpForm from './components/SignUpForm';
 import './App.css';
 import Routes from './components/Routes/Routes';
 
 const App = () => {
   return (
     <div>
-<Router>
-<Navbar />
+    <Router>
+    <Navbar />
       <div className="background"></div>
       <div className="container">
         <div class="item">
@@ -22,7 +20,7 @@ const App = () => {
               To Our Page
             </span>
             <p>Di quale servizio vuoi usufruire?</p>
-            <div class="social-icon">
+            <div className="social-icon">
             <NavLink to="/facebook" className={({ isActive }) => isActive ? "active" : ""}>facebook <i class="bx bxl-facebook"></i></NavLink>
             <NavLink to="/twitter" className={({ isActive }) => isActive ? "active" : ""}>twitter <i class="bx bxl-twitter"></i></NavLink>
             <NavLink to="/youtube" className={({ isActive }) => isActive ? "active" : ""}>youtube<i class="bx bxl-youtube"></i></NavLink>
@@ -32,10 +30,10 @@ const App = () => {
           </div>
         </div>
         <div class="login-section">
-<Routes/>
+          <Routes/>
         </div>
       </div>
-</Router>
+      </Router>
     </div>
   );
 };
