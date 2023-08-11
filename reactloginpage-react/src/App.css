@@ -165,7 +165,6 @@ body{
     
 }
 .login-section .form-box.register{
-    /* transform: translateX(430px); */
     transition: transform .6s ease;
     transition-delay: 0s;
 }

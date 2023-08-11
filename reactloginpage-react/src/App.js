@@ -21,7 +21,7 @@ const App = () => {
             </span>
             <p>Di quale servizio vuoi usufruire?</p>
             <div className="social-icon">
-            <NavLink to="/facebook" className={({ isActive }) => isActive ? "active" : ""}>facebook <i class="bx bxl-facebook"></i></NavLink>
+            <NavLink to="/facebook" className={({ isActive }) => isActive ? "bx bxl-facebook active" : "bx bxl-facebook"}>facebook <i class="bx bxl-facebook"></i></NavLink>
             <NavLink to="/twitter" className={({ isActive }) => isActive ? "active" : ""}>twitter <i class="bx bxl-twitter"></i></NavLink>
             <NavLink to="/youtube" className={({ isActive }) => isActive ? "active" : ""}>youtube<i class="bx bxl-youtube"></i></NavLink>
             <NavLink to="/instagram" className={({ isActive }) => isActive ? "active" : ""}>instagram <i class="bx bxl-instagram"></i></NavLink>
